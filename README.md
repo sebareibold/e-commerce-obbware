@@ -1,5 +1,6 @@
 # e-commerce-practice
-This project, e-commerce-practice, is designed as a beginner-friendly practice platform for learning and mastering React.js. 
+This project, e-commerce-practice, is designed to practice develoment of S.P.A for learning   React.js. 
+
 Objectives:
    - Learn and apply React fundamentals, such as components, props, state, and lifecycle methods.
    - Explore React Router for navigation and dynamic routing.
