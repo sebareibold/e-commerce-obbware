@@ -1,9 +1,8 @@
 # e-commerce-practice
-This project, e-commerce-practice, is designed to practice develoment of S.P.A for learning   React.js. 
+Este proyecto, e-commerce-practice, está diseñado para practicar el desarrollo de S.P.A para aprender React.js.
 
-Objectives:
-   - Learn and apply React fundamentals, such as components, props, state, and lifecycle methods.
-   - Explore React Router for navigation and dynamic routing.
-   - Gain hands-on experience with styling components using CSS or libraries like Tailwind CSS.
-   - Optionally integrate mock APIs for product data using libraries like Axios or Fetch.
-This project is an excellent starting point for developers looking to build practical skills in React.js while creating a useful and interactive application.
+Objetivos:
+- Aprender y aplicar los fundamentos de React, como componentes, props, estado y métodos de ciclo de vida.
+- Explorar React Router para navegación y enrutamiento dinámico.
+
+Este proyecto se llevara a acabo puntalmente bajo las enseñansas de coderhouse.
