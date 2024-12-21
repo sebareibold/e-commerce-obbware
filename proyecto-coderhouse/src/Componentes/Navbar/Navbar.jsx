@@ -18,7 +18,7 @@ const NavBar = () => {
                         <span className="button-content">Productos</span>
                     </li>
                     <li className={`button ${activePage === "Contactos" ? "active" : ""}`}  onClick={() => setActivePage("Contactos")}>
-                        <span className="button-content">Contactos</span>
+                        <span className="button-content">Contactos</span>   
                     </li>
                     <li className="cart">
                         <CartWidget />
