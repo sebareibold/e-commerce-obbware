@@ -3,11 +3,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 9px 9px 18px #1d1b1b, -9px -4px 18px #575151;
+    margin-bottom: 2%;
+    border-radius: 24px;
 }
-header h1{
+
+header h1 {
     font-family: Anurati;
     font-size: 300%;
-    letter-spacing: 10px; /* Espacio entre letras */
+    letter-spacing: 10px;
+    margin-left: 4%;
 }
 
 li {
@@ -15,8 +20,8 @@ li {
     margin: 10px;
 }
 
-li span{
-    font-family: Anurati,"Audiowide", serif;
+li span {
+    font-family: "Audiowide", serif;
 }
 
 .cart {
@@ -25,12 +30,15 @@ li span{
     height: 2.4rem;
     border-radius: 1.5rem;
     background: #212121;
-    /* Fondo negro transparente */
     color: #fff;
     border: none;
     cursor: pointer;
     display: inline-block;
     text-align: center;
+}
+
+.nav-list {
+    margin-right: 2%;
 }
 
 .button {
@@ -40,41 +48,25 @@ li span{
     padding: 0 2rem;
     border-radius: 1.5rem;
     background: #212121;
-    /* Fondo negro transparente */
     color: #fff;
     border: none;
     cursor: pointer;
     display: inline-block;
     text-align: center;
     line-height: 3rem;
-    transition: background 0.3s;
 }
 
-.button:hover::before {
-    transform: scaleY(1);
-    /* Cambia la escala verticalmente */
-}
-
-.button-content {
-    position: relative;
-    z-index: 1;
-}
-
-.button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleY(0);
-    transform-origin: 50% 100%;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    background: linear-gradient(82.3deg, #4a5c6a 10.8%, #9ba8ab 94.3%);
-    transition: transform 0.475s;
-    z-index: 0;
-}
-
+/* Elimina el hover effect */
 .button:hover {
-    background:#212121;
+    background: #212121;
+}
+
+/* Estilo para la página activa */
+.button.active {
+    color: white;
+}
+
+/* Estilo para los botones no activos */
+.button:not(.active) {
+    color: gray;
 }

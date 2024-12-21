@@ -1,30 +1,32 @@
 
-import React from "react";
+import React, { useState } from "react";
 import './Navbar.css'
 import CartWidget from "../CartWidget/CartWidget";
 
-
 const NavBar = () => {
+    const [activePage, setActivePage] = useState("Productos");
 
     return (
-        <>
-            <header>
-                <h1>OBBWARE</h1>
-                <nav>
-                    <li class="button">
-                        <span class="button-content">Home</span>
+        <header>
+            <h1>OBBWARE</h1>
+            <nav className="nav-list">
+                <ul>
+                    <li className={`button ${activePage === "Home" ? "active" : ""}`} onClick={() => setActivePage("Home")}>
+                        <span className="button-content">Home</span>
                     </li>
-                    <li class="button">
-                        <span class="button-content">Productos</span>
+                    <li className={`button ${activePage === "Productos" ? "active" : ""}`} onClick={() => setActivePage("Productos")}>
+                        <span className="button-content">Productos</span>
                     </li>
-                    <li class="button">
-                        <span class="button-content">Contactos</span>
+                    <li className={`button ${activePage === "Contactos" ? "active" : ""}`}  onClick={() => setActivePage("Contactos")}>
+                        <span className="button-content">Contactos</span>
                     </li>
-                    <li class="cart"><CartWidget /></li>
-                </nav>
-            </header>
-        </>
+                    <li className="cart">
+                        <CartWidget />
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
-}
-export default NavBar
+};
 
+export default NavBar;
