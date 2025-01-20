@@ -1,12 +1,11 @@
-import React from 'react'
+import carritoImg from './carrito-de-compras.png';
 
 function CartWidget() {
-  const img = 'https://cdn-icons-png.flaticon.com/512/1170/1170576.png'
   return (
     <>
-      <img src={img} alt="carrito" width="28" height="28" />
+      <img src={carritoImg} alt="carrito" width="32" height="32" />
     </>
-  )
+  );
 }
 
-export default CartWidget
+export default CartWidget;

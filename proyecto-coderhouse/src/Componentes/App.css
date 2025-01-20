@@ -1,15 +1,23 @@
-* {
-  cursor: default !important;
+
+:root {
+  --background-color: #212121; /* Define el color de fondo */
+  --primary-color: rgb(121, 121, 121); 
+  --segundary-color: white;
+  --tercery-color: #683fea;
+  --cuarto-color: #7654e6;
+  --quinto-color: #7654e65e;
 }
+
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background:  #212121;
+  background:  var(--background-color);
   color: white; /* Asegúrate de que el texto sea visible */
   font-family: Arial, sans-serif;
 }
 
-
-
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Edge: Oculta la barra */
+}

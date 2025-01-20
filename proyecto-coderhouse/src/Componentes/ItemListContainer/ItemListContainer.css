@@ -1,19 +1,8 @@
 .container {
-    border-radius: 61px;
-    background: linear-gradient(145deg, #212121, #212121);
-    box-shadow:  9px 9px 18px #1d1b1b,
-    -9px -4px 18px #575151;
-    margin: 0 10% 5% 10%;
+    background: var(--background-color);
     width: 80%;
-    height: 1000px;
     justify-items: center;
     display: grid;
-}
-
-p{
-    font-family: "Audiowide", serif;
-    color: rgb(98, 97, 97);
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10%;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    border-color: aliceblue;
 }

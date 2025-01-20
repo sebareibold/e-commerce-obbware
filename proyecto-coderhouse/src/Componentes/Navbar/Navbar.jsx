@@ -5,10 +5,10 @@ import CartWidget from "../CartWidget/CartWidget";
 
 const NavBar = () => {
     const [activePage, setActivePage] = useState("Productos");
-
+  
     return (
         <header>
-            <h1>OBBWARE</h1>
+            <h1>OBBWARE</h1> 
             <nav className="nav-list">
                 <ul>
                     <li className={`button ${activePage === "Home" ? "active" : ""}`} onClick={() => setActivePage("Home")}>
@@ -17,12 +17,13 @@ const NavBar = () => {
                     <li className={`button ${activePage === "Productos" ? "active" : ""}`} onClick={() => setActivePage("Productos")}>
                         <span className="button-content">Productos</span>
                     </li>
-                    <li className={`button ${activePage === "Contactos" ? "active" : ""}`}  onClick={() => setActivePage("Contactos")}>
-                        <span className="button-content">Contactos</span>   
+                    <li className={`button ${activePage === "Contactos" ? "active" : ""}`} onClick={() => setActivePage("Contactos")}>
+                        <span className="button-content">Contactos</span>
                     </li>
                     <li className="cart">
                         <CartWidget />
                     </li>
+                    
                 </ul>
             </nav>
         </header>
