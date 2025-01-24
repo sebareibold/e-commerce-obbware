@@ -6,7 +6,6 @@ header {
     margin-bottom: 2%;
 }
 
-
 header h1 {
     font-family: Anurati;
     font-size: 310%;
@@ -14,21 +13,22 @@ header h1 {
     margin-left: 4%;
 }
 
-
 li {
     display: inline-block;
     margin: 10px;
 }
 
-li span {
-    font-family:  'Josefin Sans', "Work Sans", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+.button-content {
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    text-decoration: none; 
+    font-family: 'Josefin Sans', "Work Sans", serif;
     font-size: 16px;
+    color: var(--primary-color);
 }
 
 .cart {
-
     position: relative;
     overflow: hidden;
     height: 2.6rem;
@@ -38,18 +38,14 @@ li span {
     display: inline-block;
     text-align: center;
 }
+
 .cart:hover {
     transform: scale(1.09);
-    
 }   
 
 .nav-list {
     margin-right: 3%;
-
 }
-
-
-/*---------------------------*/
 
 .button {
     position: relative;
@@ -57,7 +53,6 @@ li span {
     height: 3rem;
     padding: 0 2rem;
     background: var(--background-color);
-    color: var(--segundary-color);
     border-radius: 20px;
     cursor: pointer;
     display: inline-block;
@@ -65,22 +60,10 @@ li span {
     line-height: 3rem;
 }
 
-/* Elimina el hover effect */
 .button:hover {
-    background: conic-gradient( from 150deg, #5a595922 9% 50%,var(--quinto-color) 50% 100% );  
+    background:#5a595922 ;
     border-color: var(--quinto-color);
 }
 
-/* Estilo para la página activa */
-.button.active {
-    color: var(--segundary-color);
-}
-
-/* Estilo para los botones no activos */
-.button:not(.active) {
-    color: var(--primary-color);
-}
-
-
-
-
+.button-content.active {
+    color: var(--segundary-color);}

@@ -2,28 +2,32 @@
 import React, { useState } from "react";
 import './Navbar.css'
 import CartWidget from "../CartWidget/CartWidget";
+import { Link } from 'react-router-dom';
+
 
 const NavBar = () => {
     const [activePage, setActivePage] = useState("Productos");
-  
+
     return (
         <header>
-            <h1>OBBWARE</h1> 
+            <h1>OBBWARE</h1>
             <nav className="nav-list">
                 <ul>
-                    <li className={`button ${activePage === "Home" ? "active" : ""}`} onClick={() => setActivePage("Home")}>
-                        <span className="button-content">Home</span>
+                    <li className="button" >
+                        <Link to="/home" className={`button-content ${activePage === "Home" ? "active" : ""}`} onClick={() => setActivePage("Home")}>Home</Link>
                     </li>
-                    <li className={`button ${activePage === "Productos" ? "active" : ""}`} onClick={() => setActivePage("Productos")}>
-                        <span className="button-content">Productos</span>
+
+                    <li className="button" >
+                        <Link to="/productos" className={`button-content  ${activePage === "Productos" ? "active" : ""}` }onClick={() => setActivePage("Productos")} >Productos</Link>
                     </li>
-                    <li className={`button ${activePage === "Contactos" ? "active" : ""}`} onClick={() => setActivePage("Contactos")}>
-                        <span className="button-content">Contactos</span>
+
+                    <li className="button" >
+                        <Link to="/contactos"className={`button-content  ${activePage === "Contactos" ? "active" : ""}` } onClick={() => setActivePage("Contactos")}>Contactos</Link>
                     </li>
+
                     <li className="cart">
                         <CartWidget />
                     </li>
-                    
                 </ul>
             </nav>
         </header>

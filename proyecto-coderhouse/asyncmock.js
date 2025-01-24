@@ -9,14 +9,18 @@ const misProductos = [
     { id: 8, nombre: "Software de Gestion Empresarial", categoria: "Software", precio: 500, especificaciones: "Plataforma: Windows, macOS", img: "./public/OIP.jpg" }
 ];
 
-export const getProductos = () => {
+export const getProductos = (filtro) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve(misProductos);
+            try {
+                const filtrados = filtro ? misProductos.filter(filtro) : misProductos;
+                resolve(filtrados);
+            } catch (error) {
+                reject(new Error("Error al filtrar los productos"));
+            }
         }, 1500);
     });
-}
-
+};
 export const getProducto = (id) => {
     return new Promise(resolve => {
         const producto = misProductos.find(item => item.id === id);

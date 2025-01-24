@@ -1,5 +1,6 @@
 import React from 'react'
 import './Item.css'
+import { Link } from 'react-router-dom';
 
 
 function Item({ id, nombre, categoria, precio, especificaciones, img }) {
@@ -19,11 +20,11 @@ function Item({ id, nombre, categoria, precio, especificaciones, img }) {
 
       <div className="card-footer">
         <div className="card-price">
-          <span>$ {precio}</span> 
+          <span>US${precio}  </span> 
         </div>
 
         <button className="btn">
-          <span className="btn-text">Ver Detalles</span>
+          <Link to={ `/productos/${id}` } className="btn-text">Ver Detalles</Link>
         </button>
       </div>
     </div>
