@@ -1,9 +1,0 @@
-.container {
-    background: var(--background-color);
-    width: 80%;
-    justify-items: center;
-    display: grid;
-    margin: 0 auto; /* Centra el contenedor en la página */
-    border-color: aliceblue;
-}
-

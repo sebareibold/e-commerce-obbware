@@ -18,7 +18,7 @@
 }
 
 .Imagen img{
-  height: 85%;
+  height: 80%;
 }
 
 .Titulo {
@@ -47,23 +47,15 @@
   font-size: 250%;
   font-family: "Train One";
 }
-
-
 .especificacion{
   margin-bottom: 3%;
 }
-
 .informacion {
   grid-area: informacion;
   font-family: 'Josefin Sans', "Work Sans", serif;
   font-size: 110%;
   height: 100px;
 }
-
-.Desplazarse {
-  grid-area: Desplazarse;
-}
-
 .Boton {
   grid-area: Boton;
   justify-content: space-around;
@@ -81,21 +73,16 @@
   align-items: center;
   gap: 12px;
   background: var(--background-color);
-  cursor: default;
   transition: all 300ms ease-in-out;
   border: 1px solid var(--segundary-color);
 }
 
 .btn-text-detial {
   font-family: 'Josefin Sans', 'Lucida Sans Unicode', sans-serif;
-  font-weight: normal;
   color: #b7b3b3;
   font-size: medium;
   text-decoration: none;
-  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 130%;
 }
 
@@ -118,22 +105,8 @@
   box-shadow: 0 0 0 0 #0000;
 }
 
-
 .now:hover {
   background: linear-gradient(0deg, #47e05bbe, #0c8d17c0 );
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     0px 0px 14px 0px #14f100bd;
-  transform: translateY(-2px);
-  border: 0px;
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-}
-
-.now:hover .btn-text-detial {
-  color: white;
-}
-
-.now:active {
-  transform: scale(0.95);
-  box-shadow: 0 0 0 0 #0000;
 }

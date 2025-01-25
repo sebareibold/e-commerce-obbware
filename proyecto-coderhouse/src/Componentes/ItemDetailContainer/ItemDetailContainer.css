@@ -1,10 +1,8 @@
 .DetailContainer{
-    border-radius: 30px;
     background:  var(--background-color);  
     box-shadow: 5px 5px 10px var(--tercery-color),
       -5px -5px 10px var(--segundary-color);
     height: 600px;  
     width: 70% ;
-    transition: transform 0.6s ease-in-out;
     margin-left: 15%
 }
