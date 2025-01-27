@@ -2,10 +2,10 @@
   width: 100%;
   display: grid;
   grid:
-    "Imagen Imagen Titulo"  25% 
-    "Imagen Imagen informacion "  10%
-    "Imagen Imagen  precio" 12% 
-    "Imagen  Imagen  Boton" 10% /
+    "Imagen Imagen Titulo"  35% 
+    "Imagen Imagen informacion "  20%
+    "Imagen Imagen  precio" 25% 
+    "Imagen  Imagen  Boton" 20% /
     25% 25% 50%;
   gap: 8px;
 }
@@ -13,16 +13,20 @@
 .Imagen {
   grid-area: Imagen;
   justify-self: center;
-  align-content: center;
+  display: flex;
+
+  align-items: center; /* Centra verticalmente */
 }
 
-.Imagen img{
-  height: 80%;
+.Imagen img {
+  height: 500px;   
+  width: 500px;   
+  object-fit: cover;  
+  justify-self: center;  
 }
 
 .Titulo {
   grid-area: Titulo;
-  margin-top: 0%;
   align-items: center;
   justify-content: center;
   font-size: 300%;
