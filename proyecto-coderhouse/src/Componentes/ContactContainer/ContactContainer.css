@@ -1,0 +1,10 @@
+.contact-container{
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.contact-container-text{
+    font-family: "Train One";
+    font-size: 200%;
+}

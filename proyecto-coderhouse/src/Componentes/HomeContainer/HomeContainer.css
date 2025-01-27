@@ -1,0 +1,11 @@
+.home-container{
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+
+.home-container-text{
+    font-family: "Train One";
+    font-size: 200%;
+
+}
