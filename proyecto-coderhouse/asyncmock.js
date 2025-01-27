@@ -6,7 +6,7 @@ const misProductos = [
     { id: 5, nombre: "Editor de Video Pro", categoria: "Software", precio: 200, especificaciones: "Plataforma: Windows - macOS, Características: Edición 4K", img: "/OIP.jpg" },
     { id: 6, nombre: "Tarjeta Gráfica", categoria: "Hardware", precio: 700, especificaciones: "Memoria: 8GB GDDR6, Marca: OBBWAREDIA, Modelo: RTX 3060", img: "/TAREJTAG.jpg" },
     { id: 7, nombre: "Auriculares Inalámbricos", categoria: "Hardware", precio: 80, especificaciones: "Conexión: Bluetooth, Batería: 20 horas, Cancelación de ruido: Sí", img: "/auris.jpg" },
-    { id: 8, nombre: "Software de Gestion Empresarial", categoria: "Software", precio: 500, especificaciones: "Plataforma: Windows - macOS", img: "/OIP.jpg" }
+    { id: 8, nombre: "Software Empresarial", categoria: "Software", precio: 500, especificaciones: "Plataforma: Windows - macOS", img: "/OIP.jpg" }
 ];
 
 export const getProductos = (filtro) => {

@@ -4,5 +4,7 @@
       -5px -5px 10px var(--segundary-color);
     height: 600px;  
     width: 70% ;
-    margin-left: 15%
-}
+    margin-left: 15% ;
+    border-radius: 2.5em;
+  }
+

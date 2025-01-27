@@ -1,16 +1,28 @@
 .card {
-  border-radius: 30px;
+  border-radius: 2rem;
   background: var(--background-color);
   box-shadow: 5px 5px 10px var(--primary-color),
     -5px -5px 10px var(--segundary-color);
-  height: 70%;  
-  width: 300px ;
+  height: 400px;
+  /* Cambiar a auto para que el tamaño sea dinámico */
+  width: 100%;
+  /* Asegura que el ancho sea del 100% del contenedor */
+  max-width: 300px;
+  /* Limita el tamaño máximo */
   transition: transform 0.6s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 20px;
   gap: 10px;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+
+.img-item {
+  height: 100%;
+  border-radius: 2rem;
 }
 
 .card-img {
@@ -22,8 +34,8 @@
   height: 50%;
 }
 
-.card-text {
-  height: 70px;
+.card-text-item {
+  height: 55px;
   width: 100%;
 }
 
@@ -67,7 +79,7 @@
 }
 
 .card-price:hover {
-  transform:scale(1.05)
+  transform: scale(1.05)
 }
 
 .card-img:hover {
@@ -92,12 +104,12 @@
 
 .btn-text {
   font-family: 'Josefin Sans', 'Lucida Sans Unicode', sans-serif;
-  font-weight: normal; 
+  font-weight: normal;
   color: #b7b3b3;
   font-size: medium;
-  text-decoration: none; 
+  text-decoration: none;
   text-align: center;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -120,6 +132,7 @@
   transform: scale(0.95);
   box-shadow: 0 0 0 0 #0000;
 }
+
 .img {
   border-radius: 20px;
 }
@@ -127,7 +140,7 @@
 .card:hover {
   transform: translateY(-2px);
   box-shadow: 7px 7px 14px var(--tercery-color),
-  -7px -7px 14px var(--segundary-color);
+    -7px -7px 14px var(--segundary-color);
   transition: all 250ms ease-in-out;
 }
 
@@ -137,22 +150,25 @@
 /* Ajustes para pantallas medianas*/
 @media (max-width: 1800px) {
   .card {
-    height: 75%;  
-    width: 250px ;
+    height: 380px;
+    width: 300px;
     padding: 20px;
     margin-left: 5%;
   }
+
   .btn {
     width: 55%;
-    height: 150%;
+    height: 180%;
   }
+
   .btn-text {
     font-size: 100%;
   }
+
   .card-footer {
 
     margin-top: 2%;
   }
 
+  
 }
-

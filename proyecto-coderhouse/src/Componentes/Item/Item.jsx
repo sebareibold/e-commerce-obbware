@@ -8,12 +8,12 @@ function Item({ id, nombre, categoria, precio, especificaciones, img }) {
     <div className="card">
 
       <div className="card-img">
-        <img src={img} alt={nombre} className="img" />
+        <img src={img} alt={nombre} className="img-item" />
       </div>
 
       <div className="card-title">{nombre}</div>
 
-      <div className="card-text">
+      <div className="card-text-item">
         <p className='text'>{especificaciones}</p>
       </div>
 

@@ -19,37 +19,34 @@ li {
 }
 
 .button-content {
-    display: block; 
-    width: 100%; 
-    height: 100%; 
-    text-decoration: none; 
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
     font-family: 'Josefin Sans', "Work Sans", serif;
     font-size: 16px;
     color: var(--primary-color);
 }
 
 .cart {
-    position: relative;
-    overflow: hidden;
-    height: 2.6rem;
     background: var(--background-color);
-    border: none;
     cursor: pointer;
     display: inline-block;
     text-align: center;
+    transform: translateY(10px);
 }
 
-.cart:hover {
+.imagen-carrito:hover {
     transform: scale(1.09);
-}   
+}
 
 .nav-list {
+    
     margin-right: 3%;
 }
 
 .button {
     position: relative;
-    overflow: hidden;
     height: 3rem;
     padding: 0 2rem;
     background: var(--background-color);
@@ -58,12 +55,49 @@ li {
     display: inline-block;
     text-align: center;
     line-height: 3rem;
+    overflow: visible;  
 }
 
 .button:hover {
-    background:#5a595922 ;
+    background: var(--Otherbackground-color); 
     border-color: var(--quinto-color);
+    box-shadow: 0px 9px 12px rgba(0, 0, 0, 0.15); 
 }
 
 .button-content.active {
-    color: var(--segundary-color);}
+    color: var(--segundary-color);
+}
+
+ 
+.dropdown-container {
+    position: relative;  
+    border-radius: 2rem 2rem 0px 0px ; 
+    
+}
+
+.dropdown {
+    position: absolute;  
+    top: 100%; 
+    left: 0;
+    margin: 0; 
+    padding: 0;  
+    background: var(--Otherbackground-color); 
+    border: 1px solid rgba(0, 0, 0, 0.1);  
+    border-radius: 0px 0px 2rem 2rem; 
+    box-shadow: 0px 9px 12px rgba(0, 0, 0, 0.15); 
+    z-index: 10; 
+}
+
+.dropdown-container:hover .dropdown {
+    display: block; 
+}
+
+.elementoMenu {
+    font-family: 'Josefin Sans', "Work Sans", serif;
+    color: var(--primary-color);
+    text-decoration: none; 
+}
+
+.elementoMenu:hover {
+    color: #fff;
+}

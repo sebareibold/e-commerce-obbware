@@ -1,41 +1,49 @@
 import React, { useEffect, useState } from 'react'
-import './ItemListContainer.css'
 import ItemList from "../ItemList/ItemList";
 import { getProductos } from "../../../asyncmock";
 import Loader from '../Loader/Loader';
+import "./ItemListContainer.css"
 
 
+function ItemListContainer({ categoriaSeleccionada }) {
 
-function ItemListContainer() {
   const [productos, setProductos] = useState([]);
+
+  const [productosFiltrados, setProductosFiltrados] = useState([]);
+
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setLoading(true); 
-    getProductos()
-      .then((respuesta) => {
-        setProductos(respuesta);
-      })
-      .catch((error) => {
-        console.error(error);
-      })
-      .finally(() => {
-        setLoading(false); 
-      });
-  }, []); 
+  const filtrarProductos = () => {
+    const filtrados = productos.filter((producto) =>
+      categoriaSeleccionada ? producto.categoria === categoriaSeleccionada : true
+    );
+    console.log(categoriaSeleccionada);
+    setProductosFiltrados(filtrados);
+  };
 
-  if (loading) {
-    return <Loader />; 
-  }
+  useEffect(() => {
+    filtrarProductos();
+  }, [categoriaSeleccionada, productos]); // Asegúrate de volver a filtrar cuando los productos cambien
+
+  useEffect(() => {
+    setLoading(true);
+    getProductos()
+      .then((respuesta) => setProductos(respuesta))
+      .catch((error) => console.error(error))
+      .finally(() => setLoading(false));
+  }, []);
+
+  if (loading) return <Loader />;
 
   return (
     <div className="container">
-      <ItemList productos={productos} />
+      <ItemList productos={productosFiltrados} />
     </div>
   );
 }
 
 export default ItemListContainer;
+
 
 
 /*

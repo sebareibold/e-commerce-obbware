@@ -1,13 +1,12 @@
 .layout {
   width: 100%;
-  height: 100%;
   display: grid;
   grid:
-    "Imagen Imagen Titulo" 1fr 
-    "Imagen Imagen informacion " 0.5fr 
-    "Imagen Imagen  precio" 0.5fr 
-    "Imagen  Imagen  Boton" 0.5fr /
-     0.5fr 0.5fr 1fr;
+    "Imagen Imagen Titulo"  25% 
+    "Imagen Imagen informacion "  10%
+    "Imagen Imagen  precio" 12% 
+    "Imagen  Imagen  Boton" 10% /
+    25% 25% 50%;
   gap: 8px;
 }
 
@@ -41,26 +40,32 @@
 
 .precio {
   grid-area: precio;
+  align-self: center;
 }
 
 .precio p{
   font-size: 250%;
   font-family: "Train One";
 }
+
 .especificacion{
   margin-bottom: 3%;
 }
+
 .informacion {
   grid-area: informacion;
   font-family: 'Josefin Sans', "Work Sans", serif;
   font-size: 110%;
   height: 100px;
+  margin-top: 2%;
 }
+
 .Boton {
   grid-area: Boton;
   justify-content: space-around;
   align-content: start;
   display: flex;
+  width: 90%;
 }
 
 .btn-detial {
@@ -110,3 +115,11 @@
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     0px 0px 14px 0px #14f100bd;
 }
+
+@media (max-width: 1800px) {
+  .Imagen img{
+    height: 65%;
+  }
+
+}
+
