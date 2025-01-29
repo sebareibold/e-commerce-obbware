@@ -17,7 +17,6 @@ function Item({ id, nombre, categoria, precio, especificaciones, img }) {
         <p className='text'>{especificaciones}</p>
       </div>
 
-
       <div className="card-footer">
         <div className="card-price">
           <span>US${precio}  </span> 
