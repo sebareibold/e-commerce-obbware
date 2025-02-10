@@ -21,7 +21,9 @@ npm install
 ```
 
 ## Captura de Pantalla 
-![captura del proyecto](/proyecto-obbware/public/captura-obbware.png)
+![captura-obbware-productos](/proyecto-obbware/public/captura-obbware-productos.png)
+![captura-obbware-productosDetail](/proyecto-obbware/public/captura-obbware-productosdetail.png)
+![captura-obbware-carrito](/proyecto-obbware/public/captura-obbware-carrito.png)
 
 
 ## Desarrolador
