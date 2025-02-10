@@ -6,29 +6,38 @@ export const CarritoContext = createContext({
     cantidadTotal: 0
 });
 
+// eslint-disable-next-line react/prop-types
 export const CarritoProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([]);
     const [precioTotal, setPrecioTotal] = useState(0);
     const [cantidadTotal, setCantidadTotal] = useState(0);
 
+
+
     const agregarCarrito = (item, cantidad) => {
-        const productoExistente = carrito.find(prod => prod.item.id === item.id);
+        console.log(item);
+        console.log(cantidad);
+
+        const productoExistente = carrito.find(prod => prod.item.id == item.id);
 
         if (!productoExistente) {
             // Para items que NO están en el carrito
             setCarrito(prev => [...prev, { item, cantidad }]);
             setPrecioTotal(prev => prev + (item.precio * cantidad));
             setCantidadTotal(prev => prev + cantidad);
+
         } else {
             // Para items que ya están en el carrito
-            const carritoActualizado = carrito.map(prod =>
-                prod.item.id === item.id ? { ...prod, cantidad: prod.cantidad + cantidad } : prod
+            setCarrito(prevCarrito => 
+                prevCarrito.map(prod => 
+                    prod.item.id === item.id ? { ...prod, cantidad: prod.cantidad + cantidad } : prod
+                )
             );
-
-            setCarrito(carritoActualizado);
+        
             setCantidadTotal(prev => prev + cantidad);
             setPrecioTotal(prev => prev + (item.precio * cantidad));
         }
+        console.log(carrito);
     };
 
     const eliminarProducto = (id) => {

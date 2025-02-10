@@ -1,43 +1,43 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import ItemList from "../ItemList/ItemList";
-import { getProductos } from "../../../asyncmock";
 import Loader from '../Loader/Loader';
-import "./ItemListContainer.css"
-
+import "./ItemListContainer.css";
+import { db } from '../../Service/config';
+import { collection, getDocs, query, where } from 'firebase/firestore';
 
 function ItemListContainer({ categoriaSeleccionada }) {
-
   const [productos, setProductos] = useState([]);
-
-  const [productosFiltrados, setProductosFiltrados] = useState([]);
-
   const [loading, setLoading] = useState(true);
 
-  const filtrarProductos = () => {
-    const filtrados = productos.filter((producto) =>
-      categoriaSeleccionada ? producto.categoria === categoriaSeleccionada : true
-    );
-    console.log(categoriaSeleccionada);
-    setProductosFiltrados(filtrados);
-  };
-
   useEffect(() => {
-    filtrarProductos();
-  }, [categoriaSeleccionada, productos]); // Asegúrate de volver a filtrar cuando los productos cambien
+    const controller = new AbortController();
 
-  useEffect(() => {
+    const misProductos = categoriaSeleccionada
+      ? query(collection(db, "productos"), where("categoria", "==", categoriaSeleccionada))
+      : query(collection(db, "productos"));
+
     setLoading(true);
-    getProductos()
-      .then((respuesta) => setProductos(respuesta))
-      .catch((error) => console.error(error))
-      .finally(() => setLoading(false));
-  }, []);
 
-  if (loading) return <Loader />;
+    getDocs(misProductos)
+      .then(res => {
+        if (controller.signal.aborted) return;
+        const nuevoProductos = res.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setProductos(nuevoProductos);
+      })
+      .catch(error => console.error(error))
+      .finally(() => {
+        if (!controller.signal.aborted) setLoading(false);
+      });
+
+    return () => controller.abort();
+  }, [categoriaSeleccionada]);
 
   return (
     <div className="container">
-      <ItemList productos={productosFiltrados} />
+      {loading ? <Loader /> : <ItemList productos={productos} />}
     </div>
   );
 }
@@ -45,11 +45,9 @@ function ItemListContainer({ categoriaSeleccionada }) {
 export default ItemListContainer;
 
 
-
 /*
   const [state, setState] = useState(0); // Inicializa con un valor numérico.
   - state: El estado actual
   - setState: La función para actualizar el estado,
     Al invocarla, React programará una nueva renderización del componente con el estado actualizado.
-
 */

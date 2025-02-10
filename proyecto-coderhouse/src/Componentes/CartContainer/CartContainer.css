@@ -1,0 +1,117 @@
+.cart-container {
+    background: var(--background-color);
+    box-shadow: 3px 3px 10px var(--tercery-color),
+        -3px -3px 10px var(--segundary-color);
+    height: 100%;
+    width: 85%;
+    border-radius: 2.5em;
+    align-self: center;
+    justify-self: center;
+    margin-top: -1%;
+    
+}
+
+.item-cart-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 4 columnas de igual tamaño */
+    gap: 16px;
+    row-gap: 80px;
+
+    /* Espaciado entre elementos */
+    padding: 20px;
+}
+
+
+.box {
+    width: 60%;
+    height: 95%;
+    padding: 1rem;
+    background-color: var(--background-color);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 0.7rem;
+    transition: all ease 0.3s;
+    box-shadow: 0px 0px 8px 1px #b4b0c2;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box:hover {
+    box-shadow: 0px 0px 14px 1px #7857e7;
+    border: 1px solid#683fea;
+}
+
+.titulo-cart-container {
+    margin-left: 40%;
+    font-size: 200%;
+    letter-spacing: 3px;
+    padding-top: 2%;
+}
+
+.fontStyle {
+    font-family: 'Josefin Sans', "Work Sans", serif;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.sizefont-end{
+    font-size: 130%;
+}
+
+.btn-eliminar {
+    width: 90%;
+    height: 30%;
+}
+
+.btn-cart-container {
+    border: none;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #535257;
+    border: 1px solid #535257 ;
+
+    transition: all 300ms ease-in-out;
+    margin-left: 4%;
+}
+
+.texto-inferior {
+    margin-left: 5%;
+}
+
+.btn-cart-container:hover {
+    background-color: #673feaba;
+}
+
+.espacio {
+    padding-bottom: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 2%;
+}
+.comprar{
+    background-color: #600ff6d4 ;
+}
+
+.comprar:hover{
+    background-color: #212121;
+    box-shadow: inset 3px 2px 0px 0px  #5c04fff7 ,
+    23px 2px 0px 0px #600ff6d4 ;
+}
+
+.vaciar:hover{
+    background-color: #212121;
+}
+
+.vacio{
+    margin-left: 45%;
+    padding-bottom: 4%;
+}

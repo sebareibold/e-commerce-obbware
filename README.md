@@ -1,4 +1,4 @@
-# e-commerce-practice
+# e-commerce-obbware
 Este proyecto, e-commerce-practice, está diseñado para practicar el desarrollo de S.P.A para aprender React.js.
 
 Objetivos:
@@ -10,6 +10,17 @@ Objetivos:
 - Organizar la aplicación en componentes reutilizables para mantener un código modular y fácil de mantener.
 
 Este proyecto se llevará a cabo puntualmente bajo las enseñanzas de Coderhouse y será utilizado como práctica para profundizar en los conceptos de React.
+
+## Instalacion
+Instrunciones para instalary configurar el proyecto
+
+```bash
+git clone https://github.com/sebareibold/e-commerce-practice-spa.git
+cd ./proyecto-coderhouse/
+npm install
+```
+
+
 
 Desarrollado por: Sebastián Alejandro Reibold  
 Fecha de inicio: 12/12/2024  

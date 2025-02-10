@@ -1,5 +1,5 @@
 const misProductos = [
-    { id: 1, nombre: "Laptop Gaming", categoria: "Hardware", precio: 1500, especificaciones: "Procesador: Intel Core i7, RAM: 16GB, Almacenamiento: 1TB SSD", img: "/laptop.png" },
+    { id: 1, nombre: "Laptop Gaming", categoria: "Hardware", precio: 1500,  especificaciones: "Procesador: Intel Core i7, RAM: 16GB, Almacenamiento: 1TB SSD", img: "/laptop.png" },
     { id: 2, nombre: "Teclado Mecánico RGB", categoria: "Hardware", precio: 120, especificaciones: "Tipo: Mecánico, Conexión: Cable USB, Retroiluminación: RGB", img: "/public/teclado.jpg"},
     { id: 3, nombre: "Antivirus Premium", categoria: "Software", precio: 50, especificaciones: "Plataforma: Windows - macOS, Licencia: 1 año ", img: "/antivirus.png" },
     { id: 4, nombre: "Mouse Inalámbrico", categoria: "Hardware", precio: 40, especificaciones: "Tipo: Óptico, Conexión: Bluetooth, DPI: 1600", img: "/MOUSE.jpg" },

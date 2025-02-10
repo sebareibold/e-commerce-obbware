@@ -33,10 +33,13 @@ const NavBar = ({ setCategoriaSeleccionada }) => {
                         {menuVisible &&
                             (<ul className="dropdown">
                                 <li>
-                                    <Link className="elementoMenu" to="/productos" onClick={() => { setActivePage('Productos');; navSetearCategoria('Hardware') }}>Hardware</Link>
+                                    <Link className="elementoMenu" to="/productos" onClick={() => { setActivePage('Productos'); navSetearCategoria('Hardware') }}>Hardware</Link>
                                 </li>
                                 <li>
                                     <Link className="elementoMenu" to="/productos" onClick={() => { setActivePage('Productos'); navSetearCategoria('Software') }}>Software</Link>
+                                </li>
+                                <li>
+                                    <Link className="elementoMenu" to="/productos" onClick={() => { setActivePage('Productos'); navSetearCategoria('Accesorios') }}>Accesorios</Link>
                                 </li>
                             </ul>)}
                     </li>
@@ -45,7 +48,7 @@ const NavBar = ({ setCategoriaSeleccionada }) => {
                         <Link to="/contactos" className={`button-content  ${activePage === "Contactos" ? "active" : ""}`} onClick={() => setActivePage("Contactos")}>Contactos</Link>
                     </li>
 
-                    <li className="cart">
+                    <li className="cart" >
                         <CartWidget />
                     </li>
                 </ul>
