@@ -1,7 +1,8 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
-import "./ContactContainer.css"
+import "./ContactSection.css"
 
-const ContactContainer = () => {
+const ContactSection = () => {
   return (
     <div className='contact-container'>
       <p className='contact-container-text'>Contacto Page en Proceso</p>
@@ -9,4 +10,4 @@ const ContactContainer = () => {
   )
 }
 
-export default ContactContainer
+export default ContactSection
