@@ -1,24 +1,21 @@
 .cart-container {
     background: var(--background-color);
-    box-shadow: 3px 3px 10px var(--tercery-color),
-        -3px -3px 10px var(--segundary-color);
+    box-shadow: 7px 7px 14px var(--tercery-color),
+    -7px -7px 14px var(--segundary-color);
     height: 100%;
     width: 85%;
     border-radius: 2.5em;
     align-self: center;
     justify-self: center;
     margin-top: -1%;
-    
+
 }
 
 .item-cart-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /* 4 columnas de igual tamaño */
     gap: 16px;
     row-gap: 80px;
-
-    /* Espaciado entre elementos */
     padding: 20px;
 }
 .container-name{
@@ -33,7 +30,7 @@
     height: 95%;
     padding: 1rem;
     background-color: var(--background-color);
-    border: 1px solid rgba(255, 255, 255, 0.222);
+    border: 1px solid #ffffff39;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border-radius: 0.7rem;
@@ -48,8 +45,9 @@
 }
 
 .box:hover {
-    box-shadow: 0px 0px 14px 1px #7857e7;
-    border: 1px solid#683fea;
+    background: var(--background-color);
+    box-shadow: 2px 2px 14px #ffffff1e,
+    -2px -2px 14px var(--segundary-color);
 }
 
 .titulo-cart-container {
@@ -82,8 +80,8 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
-    background-color: #535257;
-    border: 1px solid #535257 ;
+    background: var(--background-color);
+    border: 1px solid #76757a ;
 
     transition: all 300ms ease-in-out;
     margin-left: 4%;
@@ -94,7 +92,9 @@
 }
 
 .btn-cart-container:hover {
-    background-color: #673feaba;
+    background: linear-gradient(0deg, #fcfcfc8f,  #918d8dc9);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+      0px 0px 10px 0px #b4b0c2;
 }
 
 .espacio {
@@ -104,19 +104,33 @@
     margin-right: 2%;
 }
 .comprar{
-    background-color: #600ff6d4 ;
-    border: 1px solid  #600ff6d4;
+    gap: 12px;
+    background: var(--background-color);
+    transition: all 300ms ease-in-out;
 }
 
 .comprar:hover{
-    background-color: #212121;
+    background: linear-gradient(0deg, #995ce9, var(--tercery-color));
+    box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.4),
+      0px 2px 20px 0px var(--cuarto-color);
+    transform: scale(1.005);
+    border: 0px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
 }
 
 .vaciar:hover{
-    background-color: #212121;
+    background: linear-gradient(0deg, #fcfcfc8f,  #918d8dc9);
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+      0px 0px 10px 0px #b4b0c2;
 }
 
 .vacio{
+    background: var(--background-color);
     margin-left: 45%;
     padding-bottom: 4%;
+}
+.container-end{
+    height: 300px;
+    align-content:flex-end ;
 }

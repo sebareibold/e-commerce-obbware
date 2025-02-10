@@ -24,8 +24,9 @@ npm install
 ![captura-obbware-productos](/proyecto-obbware/public/captura-obbware-productos.png)
 ![captura-obbware-productosDetail](/proyecto-obbware/public/captura-obbware-productosdetail.png)
 ![captura-obbware-carrito](/proyecto-obbware/public/captura-obbware-carrito.png)
+![captura-obbware-chekhout](/proyecto-obbware/public/captura-obbware-checkout.png)
 
 
 ## Desarrolador
  -  Sebastián Alejandro Reibold  
- -  Linkedin: [Perfil Linkeding](https://www.linkedin.com/in/sebastian-alejandro-reibold-783a73297/)
+ -  Linkedin: [Perfil Linkedin](https://www.linkedin.com/in/sebastian-alejandro-reibold-783a73297/)

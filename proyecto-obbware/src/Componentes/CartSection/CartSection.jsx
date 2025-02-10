@@ -29,12 +29,13 @@ const CartSection = () => {
                             </div>
                         ))}
                     </ul>
-
-                    <h3 className='fontStyle texto-inferior' >Total de productos: {cantidadTotal}</h3>
-                    <h3 className='fontStyle texto-inferior'>Precio total: ${precioTotal}</h3>
-                    <div className='espacio'>
-                        <button className='btn-cart-container vaciar' onClick={vaciarCarrito}><p className='fontStyle sizefont-end'>Vaciar Carrito</p></button>
-                        <Link to="/checkout" className="btn-cart-container comprar fontStyle sizefont-end">Comprar</Link>
+                    <div className="container-end">
+                        <h3 className='fontStyle texto-inferior' >Total de productos: {cantidadTotal}</h3>
+                        <h3 className='fontStyle texto-inferior'>Precio total: ${precioTotal}</h3>
+                        <div className='espacio'>
+                            <button className='btn-cart-container vaciar' onClick={vaciarCarrito}><p className='fontStyle sizefont-end'>Vaciar Carrito</p></button>
+                            <Link to="/checkout" className="btn-cart-container comprar fontStyle sizefont-end">Comprar</Link>
+                        </div>
                     </div>
                 </>
                 )}
