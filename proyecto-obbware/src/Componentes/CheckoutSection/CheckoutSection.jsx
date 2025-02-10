@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
-import "./Checkout.css";
+import "./CheckoutSection.css";
 import { db } from "../../Service/config";
 import { collection, addDoc } from "firebase/firestore";
 import { CarritoContext } from "../../Context/CarritoContext";
 
-const Checkout = () => {
+const CheckoutSection = () => {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [emailConfirmation, setEmailConfirmation] = useState("");
@@ -140,4 +140,4 @@ const Checkout = () => {
   );
 };
 
-export default Checkout;
+export default CheckoutSection;

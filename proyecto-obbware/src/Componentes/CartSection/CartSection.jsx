@@ -1,11 +1,11 @@
 import { useContext } from 'react';
 import { CarritoContext } from '../../Context/CarritoContext';
 import "../ItemDetialContainer/ItemDetialContainer.css";
-import "./CartContainer.css"
+import "./CartSection.css"
 import { Link } from 'react-router-dom';
 
 
-const CartContainer = () => {
+const CartSection = () => {
     const { carrito, cantidadTotal, precioTotal, eliminarProducto, vaciarCarrito } = useContext(CarritoContext);
 
     return (
@@ -20,7 +20,7 @@ const CartContainer = () => {
                             <div className='container'>
                                 <div className="box">
                                     <li className="fontStyle" key={item.id}>
-                                        <h3 className='text'>{item.nombre}</h3>
+                                        <div className='container-name'><h3 >{item.nombre}</h3> </div>
                                         <p>Precio: ${item.precio}</p>
                                         <p>Cantidad: {cantidad}</p>
                                         <button className='btn-cart-container btn-eliminar' onClick={() => eliminarProducto(item.id)}> <p className='fontStyle'>Eliminar</p></button>
@@ -43,4 +43,4 @@ const CartContainer = () => {
     );
 };
 
-export default CartContainer;
+export default CartSection;

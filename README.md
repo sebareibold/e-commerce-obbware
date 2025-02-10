@@ -15,13 +15,15 @@ Este proyecto se llevará a cabo puntualmente bajo las enseñanzas de Coderhouse
 Instrunciones para instalary configurar el proyecto
 
 ```bash
-git clone https://github.com/sebareibold/e-commerce-practice-spa.git
+git clone https://github.com/sebareibold/e-commerce-obbware.git
 cd ./proyecto-coderhouse/
 npm install
 ```
 
+## Captura de Pantalla 
+![captura del proyecto](/proyecto-obbware/public/captura-obbware.png)
 
 
-Desarrollado por: Sebastián Alejandro Reibold  
-Fecha de inicio: 12/12/2024  
-Cuentas de commit: sebareibold, SbaProgrammer
+## Desarrolador
+ -  Sebastián Alejandro Reibold  
+ -  Linkedin: [Perfil Linkeding](https://www.linkedin.com/in/sebastian-alejandro-reibold-783a73297/)
