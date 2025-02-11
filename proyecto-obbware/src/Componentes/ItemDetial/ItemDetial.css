@@ -182,7 +182,7 @@
 }
 
 .now:hover {
-  background: linear-gradient(0deg, #013b09be, #4cf85ac0);
+  background: linear-gradient(0deg, #015c0dda, #4cf85aa1);
   box-shadow: inset 0px 1px 0px 0px #4cf85ac0,
     0px 0px 20px 0px #14f10094;
 }
