@@ -72,11 +72,6 @@
   font-family: "Train One";
 }
 
-.cantidad {
-  display: flex;
-  gap: 16px;
-  justify-content: space-between;
-}
 
 .btn-cantidad-container{
   width: 50%;
@@ -85,59 +80,6 @@
   display: flex;
   align-items: center;
 }
-
-.btn-cantidad {
-  border: none;
-  width: 25%;
-  height: 50%;
-  border-radius: 3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  background: var(--background-color);
-  transition: all 300ms ease-in-out;
-  border: 1px solid var(--segundary-color);
-  margin-left: 4%;
-}
-
-.cantidad-text{
-  font-family: 'Josefin Sans', "Work Sans", serif;
-  font-size: 120%;
-  display: flex;
-  align-items: center;
-  
-}
-
-.btn-cantidad:hover {
-  border: 0px;
-  cursor: pointer;
-  transition: all 300ms ease-in-out;
-  transform: scale(1.05);
-}
-
-.btn-cantidad:active{
-  transform: scale(0.95);
-}
-
-.mas:hover {
-  background: linear-gradient(0deg, #4af33b9f, #109204a9);
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-    0px 0px 8px 0px #86ca80;
-}
-
-.menos:hover {
-  background: linear-gradient(0deg, #f11b1bb4, #940909);
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-    0px 0px 8px 0px #e98181;
-}
-
-
-.menos:hover .btn-text-detial {
-  color: rgb(245, 245, 245);
-}
-
-
 
 .btn-detial {
   border: none;

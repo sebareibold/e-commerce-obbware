@@ -1,29 +1,24 @@
 import React, { useContext, useState } from 'react';
 import { CarritoContext } from '../../Context/CarritoContext';
-import "./ItemDetial.css";
+import "./ItemDetail.css";
+import ItemCount from '../ItemCount/ItemCount';
 
-const ItemDetial = ({ id, nombre, categoria, precio, especificaciones, img }) => {
+const ItemDetail = ({ id, nombre, categoria, precio, especificaciones, img }) => {
 
   const { agregarCarrito } = useContext(CarritoContext);
 
   const [agregarCantidad, setAgregarCantidad] = useState(0);
 
+  const cambiadorDeCantidad = (cantidad) => {
+    setAgregarCantidad(cantidad);
+  };
+
   const sumarAlCarrito = () => {
-    if(agregarCantidad!=0){
+    if (agregarCantidad != 0) {
       agregarCarrito({ id, nombre, categoria, precio, especificaciones, img }, agregarCantidad);
       setAgregarCantidad(0);
     }
   }
-
-  const sumarCantidad = () => {
-    setAgregarCantidad(agregarCantidad+1);
-  }
-  const restarCantidad = () => {
-    if(agregarCantidad>0){
-      setAgregarCantidad(agregarCantidad-1);
-    }
-  }
-
 
   return (
     <section className="layout">
@@ -43,22 +38,9 @@ const ItemDetial = ({ id, nombre, categoria, precio, especificaciones, img }) =>
       </div>
 
       <div className="precio-cantidad">
-
         <p className='precio-text'>US$ {precio}</p>
-
-        <div className="cantidad">
-          <p className='cantidad-text'>Cantidad En Interes: {agregarCantidad} </p>
-          <div className='btn-cantidad-container'>
-            <button className="btn-cantidad menos" onClick={restarCantidad}>
-              <p className="btn-text-detial">-</p>
-            </button>
-            <button className="btn-cantidad mas" onClick={sumarCantidad}>
-              <p className="btn-text-detial">+</p>
-            </button>
-          </div>
-        </div>
+        <ItemCount id={id} initial={1} onChange={cambiadorDeCantidad} />
       </div>
-
 
       <div className="Boton">
         <button className="btn-detial now">
@@ -68,6 +50,7 @@ const ItemDetial = ({ id, nombre, categoria, precio, especificaciones, img }) =>
         <button className="btn-detial" onClick={sumarAlCarrito}>
           <p className="btn-text-detial">Añadir al carrito</p>
         </button>
+
       </div>
     </section>
   );
@@ -80,4 +63,4 @@ function Especificaciones({ esp }) {
   return <div className="Especificaciones">{especificaciones}</div>;
 }
 
-export default ItemDetial;
+export default ItemDetail;

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Navbar from './Componentes/Navbar/Navbar';
 import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from './Componentes/ItemDetialContainer/ItemDetialContainer';
+import ItemDetailContainer from './Componentes//ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter as Router, Routes, Route ,Navigate } from 'react-router-dom';
 import HomeSection from './Componentes/HomeSection/HomeSection';
 import ContactSection from './Componentes/ContactSection/ContactSection';
