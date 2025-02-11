@@ -114,10 +114,12 @@ input:focus {
 }
 
 .btn-checkout:hover {
-  background: linear-gradient(to right, var(--Otherbackground-color), rgba(255, 255, 255, 0.582));
-  /* Gradiente lineal */
-  transform: scale(1.007);
-
+  background: linear-gradient(0deg, #3e3354, var(--tercery-color));
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+      0px 0px 20px 0px var(--cuarto-color);
+    transform: translateY(-2px);
+    cursor: pointer;
+    transition: all 1.4s ease;
 }
 
 .pedido-confirmado {

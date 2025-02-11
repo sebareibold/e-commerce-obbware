@@ -110,13 +110,13 @@
 }
 
 .comprar:hover{
-    background: linear-gradient(0deg, #995ce9, var(--tercery-color));
-    box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.4),
-      0px 2px 20px 0px var(--cuarto-color);
-    transform: scale(1.005);
+    background: linear-gradient(0deg, #3e3354, var(--tercery-color));
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+      0px 0px 20px 0px var(--cuarto-color);
+    transform: translateY(-2px);
     border: 0px;
     cursor: pointer;
-    transition: all 300ms ease-in-out;
+    transition: all 1.4s ease;
 }
 
 .vaciar:hover{
