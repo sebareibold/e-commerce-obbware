@@ -1,11 +1,23 @@
-.home-container{
-    display: flex;
-    justify-content: center;  
-    align-items: center; 
+@import "tailwindcss";
+
+.bg-white {
+    background-color: var( --background-color);
+    font-family: 'Josefin Sans', "Work Sans", serif;
 }
 
-.home-container-text{
-    font-family: "Train One";
-    font-size: 200%;
-
+.lg:py-56{
+    padding-block:0;
+}
+.text-5xl{
+    color: white;
+    font-size: 360%;
+}
+.text-lg{
+    color: rgb(166, 168, 170);
+}
+.relative{
+    color: rgb(166, 168, 170);
+}
+.mt-10  a{
+    color: white;
 }

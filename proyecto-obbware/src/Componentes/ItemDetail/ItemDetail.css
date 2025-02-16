@@ -1,4 +1,4 @@
-.layout {
+.custom-layout {
   width: 100%;
   height: 700px;
   display: grid;
@@ -6,7 +6,7 @@
     "Imagen Imagen Titulo" 35% "Imagen Imagen informacion " 20% "Imagen Imagen  precio" 25% "Imagen  Imagen  Boton" 20% / 25% 25% 50%;
 }
 
-.Imagen {
+.custom-imagen {
   grid-area: Imagen;
   justify-self: center;
   display: flex;
@@ -15,26 +15,27 @@
   /* Centra verticalmente */
 }
 
-.Imagen img {
+.custom-imagen .custom-img {
   height: 500px;
   width: 500px;
   object-fit: cover;
   justify-self: center;
 }
 
-.Titulo {
+.custom-Titulo {
   grid-area: Titulo;
   align-items: center;
   justify-content: center;
   font-size: 300%;
 }
 
-.titulo-text {
+.custom-titulo-text {
+  margin-top: 10%;
   font-family: 'Anton';
   margin-bottom: -2%;
 }
 
-.Categoria p {
+.custom-categoria p {
   font-family: "Train One";
   font-size: 70%;
 }
@@ -57,7 +58,7 @@
   display: flex;
   width: 90%;
   height: 80%;
-  margin-bottom: 10%
+  margin-bottom: 5%
 }
 
 

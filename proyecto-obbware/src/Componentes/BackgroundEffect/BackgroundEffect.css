@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.custom-position{
+    transform: translateY( -49%);
+}

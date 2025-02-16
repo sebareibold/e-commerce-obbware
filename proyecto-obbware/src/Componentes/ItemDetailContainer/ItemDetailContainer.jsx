@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom'
 import Loader from '../Loader/Loader';
 import { db } from '../../Service/config';
 import { doc, getDoc } from "firebase/firestore";
+import BackgroundEffect from '../BackgroundEffect/BackgroundEffect';
 
 
 function ItemDetailContainer() {
@@ -30,8 +31,8 @@ function ItemDetailContainer() {
 
   return (
     <>
-      {loading ? <Loader /> : <div className='DetailContainer'><ItemDetail {...producto} />    </div>
-      }
+      {loading ? <Loader /> : <div className='DetailContainer'><ItemDetail {...producto} />    </div>}
+      <BackgroundEffect/>
     </>
   );
 }

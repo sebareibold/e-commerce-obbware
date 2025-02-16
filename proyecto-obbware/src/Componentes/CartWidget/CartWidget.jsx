@@ -12,7 +12,7 @@ function CartWidget() {
       {cantidadTotal > 0 && 
       ( 
         <span 
-          style={{ position: 'absolute',top: '-1px', right: '6px', backgroundColor: '#212121', color: 'white', borderRadius: '500%', padding: '3px 4px',fontSize: '13px',fontWeight: 'bold'}}
+          style={{ position: 'absolute',top: '-6px', right: '6px', backgroundColor: '#212121', color: 'white', borderRadius: '500%', padding: '3px 4px',fontSize: '13px',fontWeight: 'bold'}}
         > {cantidadTotal} </span>
       )}
     </Link>

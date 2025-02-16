@@ -4,6 +4,7 @@ import Loader from '../Loader/Loader';
 import "./ItemListContainer.css";
 import { db } from '../../Service/config';
 import { collection, getDocs, query, where } from 'firebase/firestore';
+import BackgroundEffect from '../BackgroundEffect/BackgroundEffect';
 
 function ItemListContainer({ categoriaSeleccionada }) {
   const [productos, setProductos] = useState([]);
@@ -36,18 +37,12 @@ function ItemListContainer({ categoriaSeleccionada }) {
   }, [categoriaSeleccionada]);
 
   return (
-    <div className="container">
+    <div className='custom-ListContainer'> 
       {loading ? <Loader /> : <ItemList productos={productos} />}
+      <BackgroundEffect/>
     </div>
   );
 }
 
 export default ItemListContainer;
 
-
-/*
-  const [state, setState] = useState(0); // Inicializa con un valor numérico.
-  - state: El estado actual
-  - setState: La función para actualizar el estado,
-    Al invocarla, React programará una nueva renderización del componente con el estado actualizado.
-*/

@@ -1,32 +1,41 @@
-.cart-container {
+.custom-cart-container {
     background: var(--background-color);
     box-shadow: 7px 7px 14px var(--tercery-color),
-    -7px -7px 14px var(--segundary-color);
+                -7px -7px 14px var(--segundary-color);
     height: 100%;
     width: 85%;
     border-radius: 2.5em;
     align-self: center;
     justify-self: center;
     margin-top: -1%;
-
+    margin-left: 2%;
+    margin-right: 2%;
 }
-
-.item-cart-container {
+.custom-item-cart-obb{
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+}
+.custom-item-cart-container {
+    padding-left: 2%;
+    padding-right: 2%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
     row-gap: 80px;
     padding: 20px;
 }
-.container-name{
+
+.custom-container-name {
     height: 30%;
 }
-.container-name h3{
+
+.custom-container-name h3 {
     font-size: 120%;
 }
 
-.box {
-    width: 60%;
+.custom-box {
+    width: 70%;
     height: 95%;
     padding: 1rem;
     background-color: var(--background-color);
@@ -36,44 +45,46 @@
     border-radius: 0.7rem;
     transition: all ease 0.3s;
     box-shadow: 0px 0px 8px 1px #b4b0c2;
-}
-
-.box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 10%;
 }
 
-.box:hover {
+.custom-box:hover {
     background: var(--background-color);
     box-shadow: 2px 2px 14px #ffffff1e,
-    -2px -2px 14px var(--segundary-color);
+                -2px -2px 14px var(--segundary-color);
 }
 
-.titulo-cart-container {
+.custom-titulo-cart-container {
     margin-left: 40%;
     font-size: 200%;
     letter-spacing: 3px;
     padding-top: 2%;
 }
 
-.fontStyle {
+.custom-fontStyle {
     font-family: 'Josefin Sans', "Work Sans", serif;
     color: aliceblue;
     text-decoration: none;
 }
+.custom-btn-end{
+    height: 140%;    
+}
 
-.sizefont-end{
+.custom-sizefont-end {
     font-size: 130%;
 }
 
-.btn-eliminar {
-    margin-top: 20%;
+.custom-btn-eliminar {
+    margin-top: 10%;
     width: 90%;
     height: 20%;
+    margin-bottom: 5%;
 }
 
-.btn-cart-container {
+.custom-btn-cart-container {
     border: none;
     border-radius: 2em;
     display: flex;
@@ -81,56 +92,57 @@
     align-items: center;
     gap: 12px;
     background: var(--background-color);
-    border: 1px solid #76757a ;
-
+    border: 1px solid #76757a;
     transition: all 300ms ease-in-out;
     margin-left: 4%;
 }
 
-.texto-inferior {
+.custom-texto-inferior {
     margin-left: 5%;
 }
 
-.btn-cart-container:hover {
-    background: linear-gradient(0deg, #fcfcfc8f,  #918d8dc9);
+.custom-btn-cart-container:hover {
+    background: linear-gradient(0deg, #fcfcfc8f, #918d8dc9);
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-      0px 0px 10px 0px #b4b0c2;
+                0px 0px 10px 0px #b4b0c2;
 }
 
-.espacio {
-    padding-bottom: 2%;
+.custom-espacio {
+    padding-bottom: 3%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-right: 2%;
 }
-.comprar{
+
+.custom-comprar {
     gap: 12px;
     background: var(--background-color);
     transition: all 300ms ease-in-out;
 }
 
-.comprar:hover{
+.custom-comprar:hover {
     background: linear-gradient(0deg, #3e3354, var(--tercery-color));
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-      0px 0px 20px 0px var(--cuarto-color);
+                0px 0px 20px 0px var(--cuarto-color);
     transform: translateY(-2px);
     border: 0px;
     cursor: pointer;
     transition: all 1.4s ease;
 }
 
-.vaciar:hover{
-    background: linear-gradient(0deg, #fcfcfc8f,  #918d8dc9);
+.custom-vaciar:hover {
+    background: linear-gradient(0deg, #fcfcfc8f, #918d8dc9);
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-      0px 0px 10px 0px #b4b0c2;
+                0px 0px 10px 0px #b4b0c2;
 }
 
-.vacio{
+.custom-vacio {
     background: var(--background-color);
     margin-left: 45%;
     padding-bottom: 4%;
 }
-.container-end{
+
+.custom-container-end {
     height: 300px;
-    align-content:flex-end ;
+    align-content: flex-end;
 }

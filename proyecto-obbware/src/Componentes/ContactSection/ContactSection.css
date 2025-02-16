@@ -1,10 +1,27 @@
-.contact-container{
-    display: flex;
-    justify-content: center;  
-    align-items: center; 
+
+@import "tailwindcss";
+.py-24{
+    padding: 0;
 }
 
-.contact-container-text{
-    font-family: "Train One";
-    font-size: 200%;
+.custom-obb{
+    margin-top: 3%;
+    color: white;
+    font-family: 'Josefin Sans', "Work Sans", serif;
+}
+.custom-obb p{
+    color: rgb(166, 168, 170);
+}
+.custom-obb h2{
+    color: white;
+}
+.custom-input{
+    width: 100%;
+}
+
+.custom-form{
+    margin-top:2%;
+}
+.custom-contact{
+    padding-bottom: 10%;
 }

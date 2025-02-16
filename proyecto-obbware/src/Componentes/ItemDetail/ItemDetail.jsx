@@ -21,14 +21,14 @@ const ItemDetail = ({ id, nombre, categoria, precio, especificaciones, img }) =>
   }
 
   return (
-    <section className="layout">
-      <div className="Imagen">
-        <img src={img} alt={nombre} className="img" />
+    <section className="custom-layout">
+      <div className="custom-imagen">
+        <img src={img} alt={nombre} className="custom-img" />
       </div>
 
-      <div className="Titulo">
-        <p className="titulo-text">{nombre}</p>
-        <div className="Categoria">
+      <div className="custom-Titulo">
+        <p className="custom-titulo-text">{nombre}</p>
+        <div className="custom-categoria">
           <p>{categoria}</p>
         </div>
       </div>

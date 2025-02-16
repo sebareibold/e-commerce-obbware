@@ -19,7 +19,7 @@ const NavBar = ({ setCategoriaSeleccionada }) => {
     };
 
     return (
-        <header>
+        <header className="no-tailwind">
             <h1>OBBWARE</h1>
             <nav className="nav-list">
                 <ul>
