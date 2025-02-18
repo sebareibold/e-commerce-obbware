@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ItemList from "../ItemList/ItemList";
 import Loader from '../Loader/Loader';
 import "./ItemListContainer.css";
-import { db } from '../../Service/config';
+import { db } from '../../service/config';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import BackgroundEffect from '../BackgroundEffect/BackgroundEffect';
 
