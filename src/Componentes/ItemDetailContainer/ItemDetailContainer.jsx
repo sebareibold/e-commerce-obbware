@@ -1,4 +1,3 @@
-import React from 'react'
 import { useEffect, useState } from 'react'
 //import { getProducto } from '../../../asyncmock'
 import ItemDetail from '../ItemDetail/ItemDetail';

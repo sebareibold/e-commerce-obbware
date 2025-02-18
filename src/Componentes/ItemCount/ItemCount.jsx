@@ -1,4 +1,5 @@
-import React, { useState, useContext, useEffect } from "react";
+import { useState, useContext, useEffect } from "react";
+import PropTypes from 'prop-types';
 import { CarritoContext } from "../../Context/CarritoContext";
 import "./ItemCount.css";
 
@@ -29,6 +30,11 @@ const ItemCount = ({ id, initial = 1, onChange }) => {
       <button className="btn-cantidad mas" onClick={incrementar}>+</button>
     </div>
   );
+};
+ItemCount.propTypes = {
+  id: PropTypes.number.isRequired,
+  initial: PropTypes.number,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default ItemCount;

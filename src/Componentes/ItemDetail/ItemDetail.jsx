@@ -1,4 +1,5 @@
 import  { useContext, useState } from 'react';
+import PropTypes from 'prop-types';
 import { CarritoContext } from '../../Context/CarritoContext';
 import "./ItemDetail.css";
 import ItemCount from '../ItemCount/ItemCount';
@@ -62,5 +63,18 @@ function Especificaciones({ esp }) {
   )) : null;
   return <div className="Especificaciones">{especificaciones}</div>;
 }
+
+Especificaciones.propTypes = {
+  esp: PropTypes.string,
+};
+
+ItemDetail.propTypes = {
+  id: PropTypes.string.isRequired,
+  nombre: PropTypes.string.isRequired,
+  categoria: PropTypes.string.isRequired,
+  precio: PropTypes.number.isRequired,
+  especificaciones: PropTypes.string,
+  img: PropTypes.string.isRequired,
+};
 
 export default ItemDetail;

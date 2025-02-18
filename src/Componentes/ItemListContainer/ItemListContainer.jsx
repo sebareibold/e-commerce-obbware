@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import ItemList from "../ItemList/ItemList";
 import Loader from '../Loader/Loader';
 import "./ItemListContainer.css";
@@ -43,6 +44,9 @@ function ItemListContainer({ categoriaSeleccionada }) {
     </div>
   );
 }
+ItemListContainer.propTypes = {
+  categoriaSeleccionada: PropTypes.string,
+};
 
 export default ItemListContainer;
 

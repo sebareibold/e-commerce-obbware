@@ -1,6 +1,6 @@
-import React from 'react';
 import './Item.css';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function Item({ id, nombre, categoria, precio, especificaciones, img }) {
   return (
@@ -23,5 +23,13 @@ function Item({ id, nombre, categoria, precio, especificaciones, img }) {
     </div>
   );
 }
+Item.propTypes = {
+  id: PropTypes.string.isRequired,
+  nombre: PropTypes.string.isRequired,
+  categoria: PropTypes.string.isRequired,
+  precio: PropTypes.number.isRequired,
+  especificaciones: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+};
 
 export default Item;
