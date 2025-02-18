@@ -8,6 +8,7 @@ Es un proyecto de desarrollo web orientado a la creación de una tienda en líne
   - **React.js**.
   - **Vite**.
   - **Neumorphism.io**
+  - **Tailwindui**  
     
 - **Base de Datos Firebase**: La tienda está gestionada mediante una base de datos en **Firebase**.
 - **Secciones en Proceso**: Aún se encuentran en desarrollo algunas funcionalidades clave,la implementación de filtros avanzados para productos, sección de inicio y sección de contanctos.
