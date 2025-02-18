@@ -23,10 +23,10 @@ npm install
 ```
 
 ## Captura de Pantalla 
-![captura-obbware-productos](/proyecto-obbware/public/captura-obbware-productos.png)
-![captura-obbware-productosDetail](/proyecto-obbware/public/captura-obbware-productosdetail.png)
-![captura-obbware-carrito](/proyecto-obbware/public//captura-obbware-carrito.png)
-![captura-obbware-chekhout](/proyecto-obbware/public/captura-obbware-checkout.png)
+![captura-obbware-productos](/public/captura-obbware-productos.png)
+![captura-obbware-productosDetail](/public/captura-obbware-productosdetail.png)
+![captura-obbware-carrito](/public//captura-obbware-carrito.png)
+![captura-obbware-chekhout](/public/captura-obbware-checkout.png)
 
 
 ## Desarrolador

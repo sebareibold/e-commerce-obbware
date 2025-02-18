@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const NavBar = ({ setCategoriaSeleccionada }) => {
     const [activePage, setActivePage] = useState("Productos");
     const [menuVisible, setMenuVisible] = useState(false);
-    const [menuAbierto, setMenuAbierto] = useState(false); // Estado para el menú hamburguesa
+    const [menuAbierto, setMenuAbierto] = useState(false);
 
     const desplegarCategorias = () => { setMenuVisible(true); };
     const plegarCategorias = () => { setMenuVisible(false); };
