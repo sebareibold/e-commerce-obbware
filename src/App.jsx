@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Componentes/Navbar/Navbar';
 import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './Componentes//ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter as Router, Routes, Route ,Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 import HomeSection from './Componentes/HomeSection/HomeSection';
 import ContactSection from './Componentes/ContactSection/ContactSection';
 import { CarritoProvider } from './Context/CarritoContext';
@@ -20,14 +20,12 @@ function App() {
       <CarritoProvider>
         <Navbar setCategoriaSeleccionada={setCategoriaSeleccionada} />
         <Routes>
-          <Route path="/home" element={<HomeSection />} />
+          <Route path="/" element={<HomeSection />} />
           <Route path="/productos" element={<ItemListContainer categoriaSeleccionada={categoriaSeleccionada} />} />
           <Route path="/productos/:id" element={<ItemDetailContainer />} />
           <Route path="/contactos" element={<ContactSection />} />
           <Route path="/carrito" element={<CartSection />} />
           <Route path="/checkout" element={<CheckoutSection />} />
-
-          <Route path="/" element={<Navigate to="/productos" />} /> {/* Inicia directo en productos */}
         </Routes>
 
       </CarritoProvider>
