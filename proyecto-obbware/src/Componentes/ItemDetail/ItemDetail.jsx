@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import  { useContext, useState } from 'react';
 import { CarritoContext } from '../../Context/CarritoContext';
 import "./ItemDetail.css";
 import ItemCount from '../ItemCount/ItemCount';

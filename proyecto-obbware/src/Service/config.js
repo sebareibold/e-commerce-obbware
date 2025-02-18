@@ -1,8 +1,8 @@
 import { initializeApp } from "firebase/app";
-import { collection, getDocs, getFirestore, writeBatch, doc } from "firebase/firestore";
+import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBsRU2tqsTOwMsFOA7c4WojuzuAiijDFYE",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "obbware-ecommerce.firebaseapp.com",
   projectId: "obbware-ecommerce",
   storageBucket: "obbware-ecommerce.firebasestorage.app",
