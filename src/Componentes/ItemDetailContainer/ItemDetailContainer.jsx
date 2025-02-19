@@ -4,7 +4,7 @@ import ItemDetail from '../ItemDetail/ItemDetail';
 import './ItemDetailContainer.css'
 import { useParams } from 'react-router-dom'
 import Loader from '../Loader/Loader';
-import { db } from '../../Service/config';
+import { db } from '../../service/config';
 import { doc, getDoc } from "firebase/firestore";
 import BackgroundEffect from '../BackgroundEffect/BackgroundEffect';
 
