@@ -23,6 +23,7 @@ function Item({ id, nombre, categoria, precio, especificaciones, img }) {
     </div>
   );
 }
+
 Item.propTypes = {
   id: PropTypes.string.isRequired,
   nombre: PropTypes.string.isRequired,

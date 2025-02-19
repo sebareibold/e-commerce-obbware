@@ -4,7 +4,7 @@ import CartWidget from "../CartWidget/CartWidget";
 import { Link } from 'react-router-dom';
 
 const NavBar = ({ setCategoriaSeleccionada }) => {
-    const [activePage, setActivePage] = useState("Productos");
+    const [activePage, setActivePage] = useState("Home");
     const [menuVisible, setMenuVisible] = useState(false);
     const [menuAbierto, setMenuAbierto] = useState(false);
 

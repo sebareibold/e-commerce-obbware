@@ -31,6 +31,7 @@ const ItemCount = ({ id, initial = 1, onChange }) => {
     </div>
   );
 };
+
 ItemCount.propTypes = {
   id: PropTypes.number.isRequired,
   initial: PropTypes.number,
