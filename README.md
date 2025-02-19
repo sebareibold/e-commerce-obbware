@@ -27,7 +27,7 @@ npm install
 ![captura-obbware-home](/public/obbware-home.png)
 ![captura-obbware-productos](/public/obbware-productos.png)
 ![captura-obbware-contacto](/public/obbware-contacto.png)
-![captura-obbware-productosDetail](/public/obbware-itemdetail.pngg)
+![captura-obbware-productosDetail](/public/obbware-itemdetail.png)
 ![captura-obbware-carrito](/public/obbware-carrito.png)
 ![captura-obbware-chekhout](/public/obbware-checkout.png)
 
