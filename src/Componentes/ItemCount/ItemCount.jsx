@@ -1,6 +1,6 @@
 import { useState, useContext, useEffect } from "react";
 import PropTypes from 'prop-types';
-import { CarritoContext } from "../../context/CarritoContext";
+import { CarritoContext } from "../../Context/CarritoContext";
 import "./ItemCount.css";
 
 const ItemCount = ({ id, initial = 1, onChange }) => {

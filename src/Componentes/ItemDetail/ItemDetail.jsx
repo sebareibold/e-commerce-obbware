@@ -1,6 +1,6 @@
 import  { useContext, useState } from 'react';
 import PropTypes from 'prop-types';
-import { CarritoContext } from '../../context/CarritoContext';
+import { CarritoContext } from '../../Context/CarritoContext';
 import "./ItemDetail.css";
 import ItemCount from '../ItemCount/ItemCount';
 

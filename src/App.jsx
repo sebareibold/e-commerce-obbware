@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import './App.css';
-import Navbar from './componentes/Navbar/Navbar';
-import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from './componentes//ItemDetailContainer/ItemDetailContainer';
+import Navbar from './Componentes/Navbar/Navbar';
+import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './Componentes/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
-import HomeSection from './componentes/HomeSection/HomeSection';
-import ContactSection from './componentes/ContactSection/ContactSection';
+import HomeSection from './Componentes/HomeSection/HomeSection';
+import ContactSection from './Componentes/ContactSection/ContactSection';
 import { CarritoProvider } from './Context/CarritoContext';
-import CartSection from './componentes/CartSection/CartSection';
-import CheckoutSection from './componentes/CheckoutSection/CheckoutSection'
+import CartSection from './Componentes/CartSection/CartSection';
+import CheckoutSection from './Componentes/CheckoutSection/CheckoutSection'
 
 
 function App() {
