@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ItemList from "../ItemList/ItemList";
 import Loader from '../Loader/Loader';
 import "./ItemListContainer.css";
-import { db } from '@/service/config';
+import { db } from '../../service/config';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import BackgroundEffect from '../BackgroundEffect/BackgroundEffect';
 
