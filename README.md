@@ -24,11 +24,12 @@ npm install
 ```
 
 ## Captura de Pantalla 
-![captura-obbware-productos](/public/captura-obbware-productos.png)
-![captura-obbware-productosDetail](/public/captura-obbware-productosdetail.png)
-![captura-obbware-carrito](/public//captura-obbware-carrito.png)
-![captura-obbware-chekhout](/public/captura-obbware-checkout.png)
-
+![captura-obbware-home](/public/obbware-home.png)
+![captura-obbware-productos](/public/obbware-productos.png)
+![captura-obbware-contacto](/public/obbware-contacto.png)
+![captura-obbware-productosDetail](/public/obbware-itemdetail.pngg)
+![captura-obbware-carrito](/public/obbware-carrito.png)
+![captura-obbware-chekhout](/public/obbware-checkout.png)
 
 ## Desarrolador
  -  Sebastián Alejandro Reibold  
