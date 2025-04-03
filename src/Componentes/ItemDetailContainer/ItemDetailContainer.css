@@ -3,7 +3,8 @@
     box-shadow: 3px 3px 10px var(--tercery-color),
       -3px -3px 10px var(--segundary-color);
     height: 100%;  
-    width: 85% ;
+    width: 86% ;
+    margin-left: 7%;
     border-radius: 2.5em;
     align-self: center;
     justify-self: center;
