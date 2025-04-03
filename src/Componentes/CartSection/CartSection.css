@@ -3,13 +3,12 @@
     box-shadow: 7px 7px 14px var(--tercery-color),
                 -7px -7px 14px var(--segundary-color);
     height: 100%;
-    width: 85%;
-    border-radius: 2.5em;
+    width: 86%;
+    border-radius: 2.5rem;
     align-self: center;
     justify-self: center;
     margin-top: -1%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 7%;
 }
 .custom-item-cart-obb{
     align-self: center;
@@ -140,6 +139,7 @@
     background: var(--background-color);
     margin-left: 45%;
     padding-bottom: 4%;
+    width: 20%;
 }
 
 .custom-container-end {

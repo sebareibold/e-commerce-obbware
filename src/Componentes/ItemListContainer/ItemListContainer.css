@@ -1,6 +1,7 @@
 
 .container-obb {
-    display: flex;
     justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    align-items: center; /* Centra verticalmente sus items*/
+    justify-self: center;
+    align-self: center;
 }
